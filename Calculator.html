@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="./calc1.css">
+</head>
+<body>
+<div class="box">
+	<div class="calc">
+		<form >
+		<div class="display">
+			<input type="text" name="Output">
+		</div>
+		<div>
+			<input type="button" class="button1" value="C" onclick="Output.value=''">
+			<input type="button" class="button1" value="%" onclick="Output.value+='%'">
+			<input type="button" class="button1" value="D"onclick="Output.value =Output.value.toString().slice(0,-1)">
+			<input type="button" class="button1" value="/" onclick="Output.value+='/'">
+		</div>
+		<div>
+			<input type="button" class="button1" value="7" onclick="Output.value+='7'">
+			<input type="button" class="button1" value="8" onclick="Output.value+='8'">
+			<input type="button" class="button1" value="9" onclick="Output.value+='9'">
+			<input type="button" class="button1" value="*" onclick="Output.value+='*'">
+		</div>
+		<div>
+			<input type="button" class="button1" value="4" onclick="Output.value+='4'">
+			<input type="button" class="button1" value="5"onclick="Output.value+='5'">
+			<input type="button" class="button1" value="6" onclick="Output.value+='6'">
+			<input type="button" class="button1" value="-" onclick="Output.value+='-'">
+			
+		</div>
+		<div>
+			<input type="button" class="button1" value="1" onclick="Output.value+='1'">
+			<input type="button" class="button1" value="2" onclick="Output.value+='2'">
+			<input type="button" class="button1" value="3" onclick="Output.value+='3'">
+			<input type="button" class="button1" value="+" onclick="Output.value+='+'">
+		</div>
+		<div>
+			<input type="button" class="button1" value="00" onclick="Output.value+='00'">
+			<input type="button" class="button1" value="0" onclick="Output.value+='0'">
+			<input type="button" class="button1" value="." onclick="Output.value+='.'">
+			<input type="button" class="button1" value="=" onclick="Output.value=eval(Output.value)">
+
+		</div>
+		</form>
+	</div>
+</div>
+</body>
+</html>
